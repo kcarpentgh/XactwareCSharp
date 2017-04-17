@@ -10,16 +10,15 @@ namespace Pyramid
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("This is the start.");
-            for(int row = 0; row == 5; row++)
+            
+            for(int row = 0; row <= 5; row++)
             {
-                Console.WriteLine("1");
-                Console.WriteLine($"Loop {row}");
-
-                /*for(int column = 0; column == 9; column++)
+ 
+                for(int column = 0; column <= 10; column++)
                 {
-                    Console.WriteLine($"Loop {column}");
+                    
                     if (row == 0 && column == 5)
+
                         Console.Write("*");
 
                         else if(row == 1 && (column >= 4 && column <= 6))
@@ -30,15 +29,18 @@ namespace Pyramid
                             Console.Write("*");
                         else if(row == 4 && (column >= 1 && column <= 9))
                             Console.Write("*");
-                        else if(row == 5 && (column >= 0 && column <= 10))
+                        else if(row == 5 && (column >= 0 && column <= 10)) //bonus row
                             Console.Write("*");
                     else Console.Write(" ");
 
-                    Console.WriteLine();
                     
-                }*/
+                    
+                }
+
+                Console.WriteLine();
             }
 
+            Console.WriteLine("I even did a bonus row!");
             Console.ReadKey();
         }
     }
